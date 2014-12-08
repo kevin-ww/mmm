@@ -5,13 +5,19 @@ package com.kvn.magic;
  */
 public class App {
 
-    String version;
+    String uuid;
 
     String name;
 
-    String uuid;
+    String version;
 
     String description;
 
-    String installationId;//?
+    DownLoadURL[] downloadURL;
+
+    public class DownLoadURL{
+        String storeName;
+        String url;
+    }
+
 }

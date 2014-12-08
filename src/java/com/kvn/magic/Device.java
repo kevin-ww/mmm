@@ -3,13 +3,13 @@ package com.kvn.magic;
 /**
  * Created by kvn on 12/7/14.
  */
-public class Device {
+public class Device {   //more specifically ,mobile device;
 
     String browser;
 
     String browserVersion;
 
-    String os;
+    OperationSystem os;
 
     String osVersion;
 
@@ -20,6 +20,16 @@ public class Device {
     String marketingName;
 
     String category; //The type of device: desktop, tablet, or mobile.
+
+    //
+    //    String carrier;
+
+    public enum OperationSystem {
+        IOS,
+        ANDROID,
+        WINDOWS_PHONE,
+        OTHERS
+    }
 
 
 }

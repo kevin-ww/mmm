@@ -10,4 +10,6 @@ public class AppInstallation {
     App app;
 
     Device device;
+
+    String downloadURL;
 }
