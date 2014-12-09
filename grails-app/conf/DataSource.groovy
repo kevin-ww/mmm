@@ -25,6 +25,7 @@ environments {
             url = "jdbc:mysql://localhost:3306/magicw?useUnicode=true&characterEncoding=utf8&autoReconnect=true"
             username = "root"
             password = ""
+            logSql=true
             properties {
                 timeBetweenEvictionRunsMillis = 1000 * 60 * 30
                 minEvictableIdleTimeMillis = 1000 * 60 * 30

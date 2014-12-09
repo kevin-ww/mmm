@@ -30,7 +30,6 @@ public class App {
 
         String store;
 
-
         String url;
 
         String memo;
