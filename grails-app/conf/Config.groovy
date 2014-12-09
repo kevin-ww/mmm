@@ -103,8 +103,12 @@ environments {
 log4j = {
     // Example of changing the log pattern for the default console appender:
     //
+    root {
+//        info()
+        debug() //by default, root log level is error. Now, we changed it to debug level,
+    }
     appenders {
-//        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
 //        console name: 'console', layout: pattern(conversionPattern: '[%d{HH:mm:ss,SSS}] %p %c{2} %m%n'), threshold:Level.DEBUG
     }
 
