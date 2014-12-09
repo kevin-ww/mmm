@@ -22,10 +22,11 @@ environments {
         dataSource {
             dbCreate = "update"
             driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:mysql://localhost:3306/magicw?useUnicode=true&characterEncoding=utf8&autoReconnect=true"
+            url = "jdbc:mysql://datanode1:3306/magicw?useUnicode=true&characterEncoding=utf8&autoReconnect=true"
             username = "root"
             password = ""
-            logSql=true
+            logSql = true
+            formatSql = true
             properties {
                 timeBetweenEvictionRunsMillis = 1000 * 60 * 30
                 minEvictableIdleTimeMillis = 1000 * 60 * 30

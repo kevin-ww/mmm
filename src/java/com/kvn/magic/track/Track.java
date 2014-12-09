@@ -1,6 +1,7 @@
 package com.kvn.magic.track;
 
-import com.kvn.magic.track.event.Event;
+
+import com.kvn.magicw.track.event.Event;
 
 /**
  * Created by kvn on 12/8/14.
