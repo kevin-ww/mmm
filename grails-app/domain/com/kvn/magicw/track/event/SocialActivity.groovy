@@ -1,6 +1,6 @@
 package com.kvn.magicw.track.event
 
-class SocialActivity {
+class SocialActivity extends Event{
 
     SocialNetwork socialNetwork;
     URL endorseURL;
@@ -9,7 +9,7 @@ class SocialActivity {
     String userHandle;
     URL contentURL;
     String[] tagsSummary;
-    String action;
+    String socialAction;
     String socialNetworkAction;
     //    String timestamp;
 

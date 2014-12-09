@@ -3,7 +3,7 @@ package com.kvn.magicw.track.event
 import com.kvn.magicw.AppStoreURL
 
 
-class AppTracking {
+class AppTracking extends Event{
 
     String appId;
 
@@ -13,7 +13,6 @@ class AppTracking {
     int screenDepth;
     String landingScreen;
     String exitScreen;
-
 
     static constraints = {
     }

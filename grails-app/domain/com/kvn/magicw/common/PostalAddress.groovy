@@ -10,6 +10,10 @@ class PostalAddress {
 
     String formattedAddress;
 
+    Date dateCreated
+
+    Date lastUpdated
+
     static constraints = {
     }
 }

@@ -21,6 +21,12 @@ class Device {
     //
     //    String carrier;
 
+    //Automatic timestamping
+    Date dateCreated
+
+    Date lastUpdated
+
+
     enum OS {
         IOS,
         ANDROID,

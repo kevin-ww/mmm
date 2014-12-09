@@ -10,7 +10,9 @@ class Event {
 
     String label;   //button name if action=='click button'
 
-    Date timestamp;
+    Date dateCreated
+
+    Date lastUpdated
 
     enum Action {
         DOWNLOAD,

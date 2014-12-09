@@ -13,6 +13,10 @@ class GeoNetwork {
     String networkDomain;
     String networkLocation;
 
+    Date dateCreated
+
+    Date lastUpdated
+
     static constraints = {
     }
 }

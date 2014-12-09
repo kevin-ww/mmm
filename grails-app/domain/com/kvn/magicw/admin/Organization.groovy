@@ -20,4 +20,6 @@ class Organization {
 
     static constraints = {
     }
+
+    static embedded = ['address']
 }

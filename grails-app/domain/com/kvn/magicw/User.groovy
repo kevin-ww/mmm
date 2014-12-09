@@ -16,6 +16,11 @@ class User {
 
     String interestInMarketCategory;
 
+    //Automatic timestamping
+    Date dateCreated
+
+    Date lastUpdated
+
     enum Gender {
         MALE, FEMALE, UNKNOWN
     }

@@ -1,6 +1,6 @@
 package com.kvn.magicw.track.event
 
-class PageTracking {
+class PageTracking extends Event{
 
     String hostName;
     String pagePath;

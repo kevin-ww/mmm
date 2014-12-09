@@ -8,14 +8,16 @@ class User {
 
     String password;
 
-//    Preference[] preferences;
+    Date dateCreated
 
+    Date lastUpdated
 
     static constraints = {
     }
 
     static mapping = {
         autoImport false
+        table 'account_user'
     }
 
     static hasMany = [preferences: Preference]

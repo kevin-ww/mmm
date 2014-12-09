@@ -22,7 +22,7 @@ environments {
         dataSource {
             dbCreate = "update"
             driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:mysql://datanode1:3306/magicw?useUnicode=true&characterEncoding=utf8&autoReconnect=true"
+            url = "jdbc:mysql://localhost:3306/magicw?useUnicode=true&characterEncoding=utf8&autoReconnect=true"
             username = "root"
             password = ""
             logSql = true

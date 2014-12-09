@@ -6,29 +6,31 @@ import com.kvn.magicw.common.PostalAddress
 class Account {
 
     //account setting  , social setting;
-    String uuid;
+    UUID uuid;
 
     String name;
 
-//    Organization organization;
+    Organization organization;
 
-//    User[] managedUsers;
+    Date dateCreated
 
-//    App[] ownedApps; //managed mobile apps;
-//
-//    App[] followedApps;
+    Date lastUpdated
 
-//    SocialSetting socialSetting;
 
     static constraints = {
     }
 
     static embedded = ['organization']
 
-//  static hasMany = [managedUsers: User, ownedApps: App, followedApps: App, socialSettings: SocialSetting]
-    static hasMany = [managedUsers: User, ownedApps: App, followedApps: App]
+    static hasMany = [users: User, ownedApps: App, followedApps: App, socialSettings: SocialSetting]
 
-    static belongsTo = [organization: Organization]
+    static mapping = {
+
+        users joinTable: [name  : 'account_user']
+
+    }
+
+//    static belongsTo = [organization: Organization]
 }
 
 //class Organization { //declared as nested class since only used within account , to increase encapsulation as well
@@ -47,7 +49,6 @@ class Account {
 ////        autoImport false
 //    }
 //}
-
 
 //class SocialSetting {
 //    //
