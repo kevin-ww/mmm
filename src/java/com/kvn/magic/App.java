@@ -13,11 +13,27 @@ public class App {
 
     String description;
 
-    DownLoadURL[] downloadURL;
+    AppStoreURL[] appStoreURL;
 
-    public class DownLoadURL{
-        String storeName;
+    public class AppStoreURL {
+
+
+
+        // Apple App Store
+        // Apple Mac App Store
+
+        // Amazon App store
+        // Windows Phone Store
+
+        // Google Play
+        // Windows Store
+
+        String store;
+
+
         String url;
+
+        String memo;
     }
 
 }
