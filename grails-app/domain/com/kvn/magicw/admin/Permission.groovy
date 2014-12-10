@@ -4,4 +4,6 @@ class Permission {
 
     static constraints = {
     }
+
+    static belongsTo = [user: User]   //
 }

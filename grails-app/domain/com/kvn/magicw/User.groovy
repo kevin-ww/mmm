@@ -2,7 +2,7 @@ package com.kvn.magicw
 
 class User {
 
-    String uuid;
+//    String uuid;
 
     //dimensions;
 
@@ -26,5 +26,13 @@ class User {
     }
 
     static constraints = {
+    }
+
+
+    static mapping = {
+
+        id generator: 'guid'
+//        users joinTable: [name  : 'account_user']
+
     }
 }

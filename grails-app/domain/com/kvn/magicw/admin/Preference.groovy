@@ -4,4 +4,7 @@ class Preference {
 
     static constraints = {
     }
+
+    static belongsTo = [user: User]   //
+
 }

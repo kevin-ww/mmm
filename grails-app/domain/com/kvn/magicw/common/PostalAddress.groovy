@@ -15,5 +15,6 @@ class PostalAddress {
     Date lastUpdated
 
     static constraints = {
+        formattedAddress maxSize:1000
     }
 }

@@ -8,4 +8,6 @@ class SocialSetting {
 
     static constraints = {
     }
+
+    static belongsTo = [account: Account]   //
 }

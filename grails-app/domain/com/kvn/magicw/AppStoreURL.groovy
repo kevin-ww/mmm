@@ -21,4 +21,17 @@ class AppStoreURL {
     Date dateCreated
 
     Date lastUpdated
+
+
+    static belongsTo = [app: App]
+
+
+    static mapping = {
+//        autoImport false
+        table 'appstore_url'
+    }
+
+    static constraints = {
+        memo maxSize: 1000
+    }
 }

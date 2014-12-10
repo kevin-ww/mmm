@@ -7,7 +7,7 @@ class AppTracking extends Event{
 
     String appId;
 
-    AppStoreURL appStoreURL;    //required only if tracking app download
+//    AppStoreURL appStoreURL;    //required only if tracking app download
 
     String screenName;
     int screenDepth;
@@ -15,5 +15,12 @@ class AppTracking extends Event{
     String exitScreen;
 
     static constraints = {
+    }
+
+    static belongsTo = [event: Event]
+
+
+    static mapping = {
+        table 'event_app_tracking'
     }
 }

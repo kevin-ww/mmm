@@ -32,6 +32,9 @@
             <g:sortableColumn property="ageBracket"
                               title="${message(code: 'user.ageBracket.label', default: 'Age Bracket')}"/>
             
+            <g:sortableColumn property="dateCreated"
+                              title="${message(code: 'user.dateCreated.label', default: 'Date Created')}"/>
+            
             <g:sortableColumn property="gender"
                               title="${message(code: 'user.gender.label', default: 'Gender')}"/>
             
@@ -44,9 +47,6 @@
             <g:sortableColumn property="interestOtherCategory"
                               title="${message(code: 'user.interestOtherCategory.label', default: 'Interest Other Category')}"/>
             
-            <g:sortableColumn property="uuid"
-                              title="${message(code: 'user.uuid.label', default: 'Uuid')}"/>
-            
         </tr>
         </thead>
         <tbody>
@@ -55,6 +55,8 @@
                 
                 <td><g:link action="show" id="${userInstance.id}">${fieldValue(bean: userInstance, field: "ageBracket")}</g:link></td>
                 
+                <td><g:formatDate date="${userInstance.dateCreated}"/></td>
+                
                 <td>${fieldValue(bean: userInstance, field: "gender")}</td>
                 
                 <td>${fieldValue(bean: userInstance, field: "interestAffinityCategory")}</td>
@@ -62,8 +64,6 @@
                 <td>${fieldValue(bean: userInstance, field: "interestInMarketCategory")}</td>
                 
                 <td>${fieldValue(bean: userInstance, field: "interestOtherCategory")}</td>
-                
-                <td>${fieldValue(bean: userInstance, field: "uuid")}</td>
                 
             </tr>
         </g:each>

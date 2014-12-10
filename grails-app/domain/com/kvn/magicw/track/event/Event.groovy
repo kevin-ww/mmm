@@ -27,4 +27,13 @@ class Event {
 
     static constraints = {
     }
+
+    static mapping = {
+//        tablePerHierarchy true
+        tablePerHierarchy false
+        id generator: 'guid'
+    }
+
+
+
 }

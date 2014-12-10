@@ -19,6 +19,7 @@ class Organization {
     }
 
     static constraints = {
+        contactPoint maxSize: 1000
     }
 
     static embedded = ['address']

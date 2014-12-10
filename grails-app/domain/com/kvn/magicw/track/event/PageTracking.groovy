@@ -21,4 +21,10 @@ class PageTracking extends Event{
 
     static constraints = {
     }
+
+    static belongsTo = [event: Event]
+
+    static mapping = {
+        table 'event_page_tracking'
+    }
 }

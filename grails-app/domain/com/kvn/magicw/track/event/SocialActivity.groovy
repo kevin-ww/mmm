@@ -23,5 +23,15 @@ class SocialActivity extends Event{
     }
 
     static constraints = {
+        tagsSummary maxSize: 1000
+    }
+
+    static belongsTo = [event: Event]
+
+    static mapping = {
+        endorseURL column :'endorse_url'
+        contentURL column :'content_url'
+        tagsSummary type:  String
+        table 'event_social_activity'
     }
 }
