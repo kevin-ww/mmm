@@ -104,16 +104,19 @@ log4j = {
     // Example of changing the log pattern for the default console appender:
     //
     root {
-//        info()
-        debug() //by default, root log level is error. Now, we changed it to debug level,
+        info()
+//        debug() //by default, root log level is error. Now, we changed it to debug level,
     }
     appenders {
         console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
 //        console name: 'console', layout: pattern(conversionPattern: '[%d{HH:mm:ss,SSS}] %p %c{2} %m%n'), threshold:Level.DEBUG
     }
 
+    trace 'org.hibernate.type'
+    debug 'org.hibernate.SQL'
 
-    error 'org.codehaus.groovy.grails.web.servlet',        // controllers
+
+    error   'org.codehaus.groovy.grails.web.servlet',        // controllers
             'org.codehaus.groovy.grails.web.pages',          // GSP
             'org.codehaus.groovy.grails.web.sitemesh',       // layouts
             'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping

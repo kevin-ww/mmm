@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/magicW.iml" filepath="$PROJECT_DIR$/magicW.iml" />
-      <module fileurl="file://$PROJECT_DIR$/magicW-grailsPlugins.iml" filepath="$PROJECT_DIR$/magicW-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmm.iml" filepath="$PROJECT_DIR$/mmm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmm-grailsPlugins.iml" filepath="$PROJECT_DIR$/mmm-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

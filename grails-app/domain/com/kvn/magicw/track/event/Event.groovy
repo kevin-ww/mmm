@@ -1,5 +1,7 @@
 package com.kvn.magicw.track.event
 
+import com.kvn.magicw.Device
+
 class Event {
 
     String uuid;
@@ -9,6 +11,8 @@ class Event {
     Action action;  //download,share, pageview ,click-button[],
 
     String label;   //button name if action=='click button'
+
+    Device device;
 
     Date dateCreated
 
@@ -26,13 +30,16 @@ class Event {
     }
 
     static constraints = {
+        label nullable: true
     }
 
     static mapping = {
 //        tablePerHierarchy true
         tablePerHierarchy false
-        id generator: 'guid'
+//        id generator: 'uuid'
     }
+
+    static embedded = ['device']
 
 
 

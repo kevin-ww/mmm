@@ -19,7 +19,7 @@ class Device {
     String category; //The type of device: desktop, tablet, or mobile.
 
     //
-    //    String carrier;
+    String carrier;
 
     //Automatic timestamping
     Date dateCreated
@@ -35,5 +35,13 @@ class Device {
     }
 
     static constraints = {
+        browser nullable: true
+        browserVersion nullable: true
+        os nullable: true
+        osVersion nullable: true
+        marketingName nullable: true
+        category nullable: true
+        carrier nullable: true
+
     }
 }
